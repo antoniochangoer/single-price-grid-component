@@ -6,6 +6,7 @@
     --clr-primary-y: hsl(71, 73%, 54%);
     --clr-neutral-lg: hsl(204, 43%, 93%);
     --clr-neutral-gb: hsl(218, 22%, 67%);
+    --clr-neutral-w: #fff;
 
     --ff-main: 'Karla', sans-serif; 
     --fs-body: 1.6rem;
@@ -73,7 +74,7 @@ main {
 }
 
 .col-1 {
-    background-color: #fff;
+    background-color: var(--clr-neutral-w);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -101,7 +102,7 @@ main {
 .col-2-title {
     /* alle headers same size? change html dan */
     font-size: 1.8rem;
-    color: #fff;
+    color: var(--clr-neutral-w);
     margin-bottom: 1rem;
 }
 
@@ -110,7 +111,7 @@ main {
     align-items: center;
     gap: 1.5rem;
     font-size: 3rem;
-    color: #fff;
+    color: var(--clr-neutral-w);
     font-weight: var(--fw-bold);
 }
 
@@ -122,7 +123,7 @@ main {
 }
 .col-2-text {
     margin-bottom: 2rem;
-    color: #fff;
+    color: var(--clr-neutral-w);
 }
 
 .btn {
@@ -132,7 +133,7 @@ main {
     padding: 1rem 2rem;
     width: 100%;
     background-color: var(--clr-primary-y);
-    color: #fff;
+    color: var(--clr-neutral-w);
     font-weight: var(--fw-bold);
 }
 
@@ -144,7 +145,7 @@ main {
 
 .col-3-title {
     font-size: 1.8rem;
-    color: #fff;
+    color: var(--clr-neutral-w);
     font-weight: var(--fw-bold);
     margin-bottom: 2rem;
 }
