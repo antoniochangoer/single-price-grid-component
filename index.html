@@ -3,48 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Single Price Grid Component</title>
 </head>
 <body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <main>
+    <section class="container">
+      <div class="card">
+        <div class="card-col col-1">
+          <h1 class="col-1-main-title">Join our community</h1>
+          <h2 class="col-1-sub-title">30-day, hassle-free money back guarantee</h2>
+          <p class="col-1-text">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</p>
+        </div>
+        <div class="card-col col-2">
+          <h2 class="col-2-title">Monthly Subscription</h2>
+          <p class="col-2-price">&dollar;29<span>per month</span></p>
+          <p class="col-2-text">Full access for less than &dollar;1 a day</p>
+          <button class="btn">Sign Up</button>
+        </div>
+        <div class="card-col col-3">
+          <h2 class="col-3-title">Why Us</h2>
+          <ul class="col-3-list">
+            <li class="list-item">Tutorials by industry experts</li>
+            <li class="list-item">Peer &amp; expert code review</li>
+            <li class="list-item">Coding exercises</li>
+            <li class="list-item">Access to our GitHub repos</li>
+            <li class="list-item">Community forum</li>
+            <li class="list-item">Flashcard decks</li>
+            <li class="list-item">New videos every week</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

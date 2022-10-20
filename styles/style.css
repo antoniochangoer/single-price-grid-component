@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --clr-primary: hsl(179, 62%, 43%);
+    --clr-primary-light: hsl(179, 60%, 49%);
+    --clr-primary-y: hsl(71, 73%, 54%);
+    --clr-neutral-lg: hsl(204, 43%, 93%);
+    --clr-neutral-gb: hsl(218, 22%, 67%);
+
+    --ff-main: 'Karla', sans-serif; 
+    --fs-body: 1.6rem;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+  html {
+    font-size: 62.5%;
+}
+
+  html, body {
+    height: 100%;
+}
+
+  body {
+    font-family: var(--ff-main);
+    font-size: var(--fs-body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+  input, button, textarea, select {
+    font: inherit;
+}
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+main {
+    background-color: var(--clr-neutral-lg);
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.card {
+    display: grid;
+}
+
+.card-col {
+    /* border-radius: 1rem; */
+    padding: 3rem;
+}
+
+.col-1 {
+    background-color: #fff;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.col-1-main-title {
+    font-size: 2.4rem;
+    color: var(--clr-primary);
+}
+
+.col-1-sub-title {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    color: var(--clr-primary-y);
+}
+
+.col-1-text {
+    color: var(--clr-neutral-gb);
+    margin-bottom: 1rem;
+}
+
+.col-2 {
+    background-color: var(--clr-primary);
+}
+
+.col-2-title {
+    /* alle headers same size? change html dan */
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.col-2-price {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: var(--fw-bold);
+}
+
+.col-2-price span {
+    font-weight: var(--fw-regular);
+    font-size: 2rem;
+    color: var(--clr-neutral-lg);
+    opacity: .6;
+}
+.col-2-text {
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: var(--clr-primary-y);
+    color: #fff;
+    font-weight: var(--fw-bold);
+}
+
+.col-3 {
+    background-color: var(--clr-primary-light);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.col-3-title {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: var(--fw-bold);
+    margin-bottom: 2rem;
+}
+
+.col-3-list {
+    list-style: none;
+    margin: 0;
+    color: var(--clr-neutral-lg);
+}
+
+@media screen and (max-width: 376px) { 
+    main {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        grid-template-columns: 1fr 1fr;
+        max-width: 60rem;
+    }
+
+    .col-1 {
+        grid-column: span 2;
+    }
+
+    .col-1-sub-title {
+        margin: 2rem 0 1rem 0;
+    }
+
+    .col-2 {
+        border-bottom-left-radius: 1rem;
+    }
+
+    .col-3 {
+        border-bottom-left-radius: 0;
+    }
+
+    .btn:hover {
+        background-color: hsl(71, 55%, 47%);
+    }
+  }
