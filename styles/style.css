@@ -96,6 +96,9 @@ main {
 
 .col-2 {
     background-color: var(--clr-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .col-2-title {
