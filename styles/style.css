@@ -52,21 +52,15 @@
 }
 
 main {
-    /* background-color: var(--clr-neutral-lg); */
-    /* height: 100%; */
     min-height: 100%;
-    /* test */
     padding: 4rem;
 }
 
 .container {
-    /* height: 100%; */
     min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* deze had ik voor test op main */
-    /* padding: 4rem; */
 }
 
 .card {
@@ -105,7 +99,6 @@ main {
 }
 
 .col-2-title {
-    /* alle headers same size? change html dan */
     font-size: 1.8rem;
     color: var(--clr-neutral-w);
     margin-bottom: 1rem;
